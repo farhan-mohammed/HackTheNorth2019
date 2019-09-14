@@ -1,0 +1,63 @@
+.soap-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% auto 10%;
+      grid-template-columns: 25% auto 10%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.soap-grid-son {
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #777;
+  border-top: none;
+  border-left: none;
+  background-color: #473d6f;
+}
+
+.soap-grid-SOAPview {
+  padding: 10px 4px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/2/2;
+  background-color: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.soap-grid-main {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1/2/2/3;
+}
+
+.soap-grid-buttons {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1/3/2/4;
+}
+/*# sourceMappingURL=SOAP.css.map */

@@ -1,0 +1,23 @@
+{
+  "name": "HackTheNorth2019",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farhan-mohammed/HackTheNorth2019.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farhan-mohammed/HackTheNorth2019/issues"
+  },
+  "homepage": "https://github.com/farhan-mohammed/HackTheNorth2019#readme",
+  "devDependencies": {
+    "create-react-app": "^3.1.1"
+  }
+}
