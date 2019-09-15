@@ -9,23 +9,25 @@
 
 # In[2]:
 
-
+import os
+from os import path
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 import numpy as np
 import summarizer
+from summarizer import SingleModel
 import struct
 import re
 import nltk
 import heapq
+import json
 
 # use creds to create a client to interact with the Google Drive API
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
 client = gspread.authorize(creds)
-# nltk.download('punkt')
-# nltk.download('stopwords')
+
 
 # In[3]:
 
@@ -105,5 +107,12 @@ summarize = np.vectorize(summarize)
 df["text"] = cleandata(df["text"])
 df["summary"] = summarize(df["text"])
 
-for x in df['summary']:
-    print(x)
+if path.exists("src/summarized.json"):
+    os.remove("src/summarized.json")
+for x in df["summary"]:
+    text = text + x
+with open('src/summarized.json', 'w+') as file:
+    data = {}
+    data["summary"] = text
+    json.dump(data, file)
+
