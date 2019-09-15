@@ -1,1 +1,97 @@
-/* No CSS *//*# sourceMappingURL=UserSummary.css.map */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+.US {
+  width: 100%;
+  min-height: 110px;
+  background-color: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+          box-shadow: 3px 3px 5px 6px #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.US-img {
+  height: 90px;
+  width: 75px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.US-img > img {
+  border-radius: inherit;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.US-img > img {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.US-img > img:before, .US-img > img:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px black;
+          box-shadow: 0 0 20px black;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  border-radius: 100px / 10px;
+}
+
+.US-img > img:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+          transform: skew(8deg) rotate(3deg);
+}
+
+.US-info {
+  margin: 0 10px;
+  width: 100%;
+}
+
+.US-name {
+  font-size: 1.25rem;
+  line-height: 100%;
+}
+
+.US-id {
+  font-size: 0.9rem;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+
+.US-num {
+  float: right;
+  line-height: 100%;
+}
+
+.US-upt {
+  display: inline-block;
+  line-height: 100%;
+}
+
+.default-text {
+  font-family: 500;
+  font-family: 'Roboto';
+  color: #71aeb7;
+}
+
+.unique-text {
+  font-family: 'Montserrat';
+}
+/*# sourceMappingURL=UserSummary.css.map */

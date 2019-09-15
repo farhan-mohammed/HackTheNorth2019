@@ -1,0 +1,41 @@
+.who{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    margin: auto 0;
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    font-family: 'Raleway';
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.UP{
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    > div{
+        width: 100%;
+    }
+    &-info{
+        height: 30%;
+        background-color: darken($color: #c0d5d6, $amount: 0%);
+    }
+    &-navi{
+        flex:0;
+        text-align: center;
+        background-color: darken($color: #c0d5d6, $amount: 0%);
+        padding-bottom: 15px;
+    }
+    &-list{
+        display: flex;
+        align-items: space-around;
+        flex-direction: column;
+        justify-content: space-around;
+        flex:1;
+        padding-bottom: 20px;
+    }
+}

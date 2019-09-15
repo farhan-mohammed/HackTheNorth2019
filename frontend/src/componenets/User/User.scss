@@ -1,0 +1,48 @@
+$side-text-color: 	#78b2ba;
+.Users{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns:40% 60%;
+    height: 100%;
+    &-detail{
+        grid-area: 1/1/2/2;
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+
+    }
+    &-list{
+        padding-left: 20px;  
+        grid-area: 1/2/2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+}
+.UD{
+    &-num{
+        padding-top: 20px;
+        font-family: 'Montserrat';
+        width:100%;
+        font-size: 1.35rem;
+        flex: 0;
+        color:$side-text-color;
+        font-weight: 700;
+    }
+    &-sum{
+        flex:1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-none{
+        }
+    }
+    &-page{
+        flex: 0;
+        color:$side-text-color;
+        font-size: 1.35rem;
+        padding-bottom: 10px;
+        font-weight: 700;
+    }
+}

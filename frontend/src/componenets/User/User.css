@@ -1,0 +1,82 @@
+.Users {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  height: 100%;
+}
+
+.Users-detail {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/2/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.Users-list {
+  padding-left: 20px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1/2/2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+}
+
+.UD-num {
+  padding-top: 20px;
+  font-family: 'Montserrat';
+  width: 100%;
+  font-size: 1.35rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  color: #78b2ba;
+  font-weight: 700;
+}
+
+.UD-sum {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.UD-page {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  color: #78b2ba;
+  font-size: 1.35rem;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=User.css.map */

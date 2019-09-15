@@ -1,0 +1,169 @@
+.Record-con {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  min-height: 90px;
+  height: 100%;
+  padding: 9px;
+}
+
+.soap-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  width: 100%;
+  height: 90%;
+  border-radius: 15px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.soap-con > div {
+  text-align: center;
+  line-height: 100%;
+  border: 1px solid #ccc;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.soap-con > div:not(:first-child) {
+  border-left: none;
+}
+
+.soap-s-title {
+  padding: 15px 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  background-color: #8dbacc;
+  color: white;
+  text-shadow: black 0px 5px 15px;
+  width: 100%;
+  border-top-left-radius: 10px;
+}
+
+.soap-s-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 12px;
+  overflow: hidden;
+  text-align: left;
+  overflow-y: scroll;
+  padding: 2px;
+}
+
+.soap-s-body::-webkit-scrollbar {
+  width: 1px;
+}
+
+.soap-o-title {
+  padding: 15px 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  background-color: #8dbacc;
+  color: white;
+  text-shadow: black 0px 5px 15px;
+  width: 100%;
+  background-color: #78b2ba;
+}
+
+.soap-o-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 12px;
+  overflow: hidden;
+  text-align: left;
+  overflow-y: scroll;
+  padding: 2px;
+}
+
+.soap-o-body::-webkit-scrollbar {
+  width: 1px;
+}
+
+.soap-a-title {
+  padding: 15px 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  background-color: #8dbacc;
+  color: white;
+  text-shadow: black 0px 5px 15px;
+  width: 100%;
+}
+
+.soap-a-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 12px;
+  overflow: hidden;
+  text-align: left;
+  overflow-y: scroll;
+  padding: 2px;
+}
+
+.soap-a-body::-webkit-scrollbar {
+  width: 1px;
+}
+
+.soap-p-title {
+  padding: 15px 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  background-color: #8dbacc;
+  color: white;
+  text-shadow: black 0px 5px 15px;
+  width: 100%;
+  background-color: #78b2ba;
+  border-top-right-radius: 10px;
+}
+
+.soap-p-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 12px;
+  overflow: hidden;
+  text-align: left;
+  overflow-y: scroll;
+  padding: 2px;
+}
+
+.soap-p-body::-webkit-scrollbar {
+  width: 1px;
+}
+
+.rec {
+  color: #9ad6d5;
+  font-weight: 800;
+  font-family: 'Raleway';
+}
+
+.rec-right {
+  color: #9ad6d5;
+  font-weight: 800;
+  font-family: 'Raleway';
+  float: right;
+}
+/*# sourceMappingURL=Record.css.map */

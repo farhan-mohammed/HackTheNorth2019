@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-
+$header-color:	#78b2ba;
 *{
     margin: 0%;
     border: 0;
@@ -16,15 +16,15 @@ body,html{
 @mixin tab-hover{
   transition: padding .10s,font-size .20s;
   &:hover{
-    background-color: darken( #78b2ba, 10%);
+    background-color: darken( $header-color, 10%);
     padding: 0 12px;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 
 }
 
 .active{
-  background-color: darken( #78b2ba, 10%);
+  background-color: darken( $header-color, 10%);
   padding: 0 12px;
   font-size: 1.1rem;
 }
@@ -44,7 +44,7 @@ body,html{
     grid-template-rows: 9% auto ;
     &-header{
         grid-template: 1/1/2/2;
-        background-color: 	#78b2ba;
+      background-color: 	$header-color;
         &-son{
             height: 100%;
             display: flex;
@@ -54,7 +54,7 @@ body,html{
     }
     &-body{
         grid-template: 2/1/3/2;
-        background-color: red;
+        background-color:#d6dde1;
         width: 100%;
         height: 100%;
 
@@ -117,6 +117,9 @@ body,html{
           align-items: center;
           justify-content: center;
           padding: 0 10px;
+          font-size: 1.30rem;
+          font-weight: 100;
+          min-width: 100px;
       }
       &-contact{
         position:absolute;

@@ -1,0 +1,105 @@
+.Record-con{
+    width: 100%;
+    background-color: white;
+    border-radius:5px;
+    border: 1px solid #ccc;
+    min-height: 90px;
+    height: 100%;
+    padding: 9px;
+}
+.soap{
+    &-con{
+        display: flex;
+        float: right;
+        width: 100%;
+        height: 90%;
+        border-radius: 15px;
+        justify-content: space-around;
+        align-items: stretch;
+        > div{
+            text-align: center;
+            line-height: 100%;
+            border: 1px solid #ccc;
+            border-top-right-radius: 10px;
+            
+            border-top-left-radius: 10px;
+            &:not(:first-child){
+                 border-left: none;
+
+            }
+            flex: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    @mixin title {
+        padding: 15px 0;
+        flex: 0;
+        background-color: #8dbacc;
+        color: white;
+        text-shadow: black 0px 5px 15px;
+
+        width: 100%;
+    }
+    @mixin body{
+        flex: 1;
+        font-size: 12px;
+        overflow: hidden;
+        text-align: left;
+        overflow-y: scroll;
+        padding: 2px;
+        &::-webkit-scrollbar{
+            width: 1px;
+        }
+    }
+    &-s{
+        &-title{
+            @include title;
+            border-top-left-radius: 10px;
+        }
+        &-body{
+            @include body;
+        }
+    }
+    &-o{
+        &-title{
+            @include title;
+            background-color: 	#78b2ba;
+        }
+        &-body{
+            @include body;
+        }
+    }
+    &-a{
+        &-title{
+            @include title;
+        }
+        &-body{
+            @include body;
+        }
+    }
+    &-p{
+        &-title{
+            @include title;
+            background-color: 	#78b2ba;
+        
+            border-top-right-radius: 10px;
+        }
+        &-body{
+            @include body;
+        }
+    }
+}
+.rec{
+    color:	#9ad6d5;
+    font-weight: 800;
+    font-family: 'Raleway';
+    &-right{
+        
+    color:	#9ad6d5;
+    font-weight: 800;
+    font-family: 'Raleway';
+    float: right;
+    }
+}
