@@ -7,6 +7,7 @@ class Record extends React.Component{
         soap = db.ref('note' + '/subjective').once('value')
         .then(function(snapshot) {
             var uname = snapshot.val()
+            console.log('hello'+ uname)
         })
 
     }
@@ -20,7 +21,7 @@ class Record extends React.Component{
             </div>
             <div className="soap-o">
                 <div className="soap-o-title">Objective</div>
-                <div className="soap-o-body">aha</div>
+                <div className="soap-o-body">{uname}</div>
             </div>
             <div className="soap-a">
                 <div className="soap-a-title">Abjective</div>
