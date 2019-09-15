@@ -1,5 +1,8 @@
 import React from 'react';
 import './SOAPSum.css'
+
+const file = require("../text.txt");
+
 class SOAPSum extends React.Component{
     render(){
         return (<div className="SOAPSum">
