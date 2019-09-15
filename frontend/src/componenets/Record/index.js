@@ -1,6 +1,16 @@
 import React from 'react'
 import './Record.css'
 class Record extends React.Component{
+    componentDidMount() {
+        event.preventDefault();
+        const db = app.database();
+        soap = db.ref('note' + '/subjective').once('value')
+        .then(function(snapshot) {
+            var uname = snapshot.val()
+        })
+
+    }
+    
     render(){
         return <div className="Record-con"><span className="rec">Record #{this.props.id ||'None'}</span> <span className="rec-right">Date Published:{this.props.date || 'AHAHAHAHAHAH'}</span>
         <div className="soap-con">

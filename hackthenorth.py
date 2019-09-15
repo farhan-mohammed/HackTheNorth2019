@@ -107,3 +107,27 @@ df["summary"] = summarize(df["text"])
 
 for x in df['summary']:
     print(x)
+
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import db
+
+# Fetch the service account key JSON file contents
+cred = credentials.Certificate('fbkey.json')
+
+# Initialize the app with a service account, granting admin privileges
+firebase_admin.initialize_app(cred, {
+    'databaseURL': 'https://hack-the-north-82cca.firebaseio.com/'
+})
+
+# As an admin, the app has access to read and write all data, regradless of Security Rules
+
+ref = db.reference('/')
+
+soapref = ref.child('note')
+soapref.set({
+    df.at[0,"type"] : df.at[0,"summary"],
+    df.at[1,"type"] : df.at[1,"summary"],
+    df.at[2,"type"] : df.at[2,"summary"],
+    df.at[3,"type"] : df.at[3,"summary"],
+})
